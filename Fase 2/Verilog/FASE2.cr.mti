@@ -1,0 +1,107 @@
+{C:/Users/aaron/Documents/PROYECTO FASE 2/MIPS_TM.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/MIPS_TM.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MIPS_TM
+
+Top level modules:
+	MIPS_TM
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/signExtend.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/signExtend.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SignExtend
+
+Top level modules:
+	SignExtend
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/ALU_Control.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/ALU_Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALUControl
+
+Top level modules:
+	ALUControl
+
+} {} {}} {C:/Users/aaron/Documents/Arquitectura de Computadoras/add4.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/Arquitectura de Computadoras/add4.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module add_
+-- Compiling module pc
+
+Top level modules:
+	add_
+	pc
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/U_Control.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/U_Control.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module U_Control
+
+Top level modules:
+	U_Control
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/Bank_R.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/Bank_R.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BancoReg
+
+Top level modules:
+	BancoReg
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/TB_DPTR.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/TB_DPTR.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB_DPTR
+
+Top level modules:
+	TB_DPTR
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/MUX5b.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/MUX5b.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2_1_5
+
+Top level modules:
+	Mux2_1_5
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/MUX.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/MUX.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mux2_1_32
+
+Top level modules:
+	Mux2_1_32
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/Mem_D.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/Mem_D.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mem_D
+
+Top level modules:
+	Mem_D
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/DPTR.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/DPTR.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DPTR
+
+Top level modules:
+	DPTR
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/ALU.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/ALU.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/buffers.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/buffers.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BufferInstr
+-- Compiling module BufferDatos
+-- Compiling module BufferALU
+-- Compiling module BufferFinal
+
+Top level modules:
+	BufferInstr
+	BufferDatos
+	BufferALU
+	BufferFinal
+
+} {} {}} {C:/Users/aaron/Documents/PROYECTO FASE 2/Mem_I.v} {1 {vlog -work work -stats=none {C:/Users/aaron/Documents/PROYECTO FASE 2/Mem_I.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mem_I
+
+Top level modules:
+	Mem_I
+
+} {} {}}
