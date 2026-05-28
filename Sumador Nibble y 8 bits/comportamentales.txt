@@ -1,0 +1,90 @@
+module bit4_c(
+    input  [3:0] A,
+    input  [3:0] B,
+    input c_in,
+    output [4:0] S
+);
+
+assign S = A + B + c_in;
+
+endmodule
+
+module bit8_c(
+    input  [7:0] A,
+    input  [7:0] B,
+    input C_in,
+    output [7:0] S,
+    output C_out
+);
+
+assign {C_out, S} = A + B + C_in;
+
+endmodule
+
+`timescale 1ns/1ps
+
+module tb_4b;
+
+reg  [3:0] A, B;
+reg  c_in;
+wire [4:0] S;
+
+bit4_c uut (
+    .A(A),
+    .B(B),
+    .c_in(c_in),
+    .S(S)
+);
+
+initial begin
+    $display("A  B  Cin  |  S");
+
+    A=0;  B=0;  c_in=0;  #10;
+    A=3;  B=2;  c_in=0;  #10;
+    A=7;  B=5;  c_in=0;  #10;
+    A=8;  B=7;  c_in=1;  #10;
+    A=15; B=15; c_in=1;  #10;
+
+    $finish;
+end
+
+initial begin
+    $monitor("%d + %d + %d = %d", A, B, c_in, S);
+end
+
+endmodule
+
+
+`timescale 1ns/1ps
+
+module test_8b;
+
+reg  [7:0] A, B;
+reg  C_in;
+wire [7:0] S;
+wire C_out;
+
+bit8_c uut (
+    .A(A),
+    .B(B),
+    .C_in(C_in),
+    .S(S),
+    .C_out(C_out)
+);
+
+initial begin
+    $display("A     B     Cin |  C");
+
+    A=0;   B=0;   C_in=0; #10;
+    A=10;  B=20;  C_in=0; #10;
+    A=100; B=50;  C_in=0; #10;
+    A=200; B=100; C_in=1; #10;
+    A=255; B=255; C_in=1; #10;
+
+    $finish;
+end
+
+initial
+    $monitor("%d + %d + %d = %d  (Cout=%d)", A, B, C_in, S, C_out);
+
+endmodule
