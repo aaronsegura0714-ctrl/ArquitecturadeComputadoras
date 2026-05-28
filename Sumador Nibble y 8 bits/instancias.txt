@@ -1,0 +1,59 @@
+module HA (
+input A,
+input B,
+output S,
+output C
+);
+
+assign S = A ^ B;
+assign C = A & B;
+
+endmodule
+
+module FA (
+input A,
+input B,
+input i_c,
+output S,
+output o_c
+);
+
+wire c1, c2, c3;
+
+HA ha1 (.A(A), .B(B), .S(c1), .C(c2));
+HA ha2 (.A(c1), .B(i_c), .S(S), .C(c3));
+
+assign o_c = c2 | c3;
+
+endmodule
+
+ module bit4(
+    input  [3:0] A, 
+    input  [3:0] B,
+    input i_c,
+    output [3:0] C
+);
+
+wire c1, c2, c3, c4;
+
+FA f1 (.A(A[0]), .B(B[0]), .i_c(i_c), .S(C[0]), .o_c(c1));
+FA f2 (.A(A[1]), .B(B[1]), .i_c(c1),  .S(C[1]), .o_c(c2));
+FA f3 (.A(A[2]), .B(B[2]), .i_c(c2),  .S(C[2]), .o_c(c3));
+FA f4 (.A(A[3]), .B(B[3]), .i_c(c3),  .S(C[3]), .o_c(c4));
+
+endmodule
+
+module bit8 (
+    input  [7:0] A,
+    input  [7:0] B,
+    input c_in,
+    output [8:0] S
+);
+
+wire c1;
+
+bit4_c b1( .A(A[3:0]), .B(B[3:0]), .c_in(c_in), .S({c1, S[3:0]}));
+
+bit4_c b2(.A(A[7:4]), .B(B[7:4]), .c_in(c1), .S(S[8:4]));
+
+endmodule
